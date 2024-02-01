@@ -4,7 +4,7 @@
         <div class="ed-mob-menu-con">
             <div class="ed-mm-left">
                 <div class="wed-logo">
-                    <a href="index-2.html"><img src="images/logo.png" alt="" />
+                    <a href="{% url 'home'%}"><img src="{% static 'images/logo.png'%}" alt="" />
                     </a>
                 </div>
             </div>
@@ -39,7 +39,7 @@
                         </ul>
                         <h4>All Pages</h4>
                         <ul>
-                            <li><a href="index-2.html">Home</a></li>
+                            <li><a href="{% url 'home'%}">Home</a></li>
                             <li><a href="about.html">About us</a></li>
                             <li><a href="admission.html">Admission</a></li>
                             <li><a href="all-courses.html">All courses</a></li>
