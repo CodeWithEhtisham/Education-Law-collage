@@ -69,7 +69,7 @@
                                             </div>
                                             <div class="mm1-com mm1-s3">
                                                 <ul>
-                                                    <li><a href="all-courses.html">All Courses</a></li>
+                                                    <li><a href="{% url 'courses'%}">All Courses</a></li>
                                                     <li><a href="course-details.html">Course details</a></li>
                                                     <li><a href="{% url 'about'%}">About</a></li>
                                                     <li><a href="admission.html">Admission</a></li>
@@ -140,7 +140,7 @@
                                     </div>
                                 </div>
                             </li>
-                            <li><a href="all-courses.html">All Courses</a></li>
+                            <li><a href="{% url 'courses'%}">All Courses</a></li>
                             <!--<li><a class='dropdown-button ed-sub-menu' href='#' data-activates='dropdown1'>Courses</a></li>-->
                             <li class="cour-menu">
                                 <a href="#!" class="mm-arr">All Pages</a>
@@ -153,14 +153,14 @@
                                                 <ul>
                                                     <li><a href="{% url 'home'%}">Home</a></li>
                                                     <li><a href="index-1.html">Home - 1</a></li>
-                                                    <li><a href="all-courses.html">All Courses</a></li>
+                                                    <li><a href="{% url 'courses'%}">All Courses</a></li>
                                                     <li><a href="course-details.html">Course Details</a></li>
                                                     <li><a href="{% url 'about'%}">About us</a></li>
                                                     <li><a href="admission.html">admission</a></li>
                                                     <li><a href="awards.html">awards</a></li>
                                                     <li><a href="blog.html">blog</a></li>
                                                     <li><a href="blog-details.html">blog details</a></li>
-                                                    <li><a href="contact-us.html">contact us</a></li>
+                                                    <li><a href="{% url 'contact-us'%}">contact us</a></li>
                                                     <li><a href="departments.html">Departments</a></li>
                                                     <li><a href="events.html">events</a></li>
                                                     <li><a href="event-details.html">event details</a></li>
@@ -190,7 +190,7 @@
                                                 <ul>
                                                     <li><a href="admin.html">admin</a></li>
                                                     <li><a href="admin-add-courses.html">Add new course</a></li>
-                                                    <li><a href="admin-all-courses.html">All courses</a></li>
+                                                    <li><a href="admin-{% url 'courses'%}">All courses</a></li>
                                                     <li><a href="admin-student-details.html">Student details</a></li>
                                                     <li><a href="admin-user-add.html">Add new user</a></li>
                                                     <li><a href="admin-user-all.html">All users</a></li>
@@ -250,7 +250,7 @@
                             </li>
                             <li><a href="dashboard.html">Student</a>
                             </li>
-                            <li><a href="contact-us.html">Contact us</a>
+                            <li><a href="{% url 'contact-us'%}">Contact us</a>
                             </li>
                         </ul>
                     </div>

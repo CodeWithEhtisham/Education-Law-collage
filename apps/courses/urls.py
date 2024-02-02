@@ -1,5 +1,5 @@
-from django.contrib import admin
-from django.urls import path , include
-
+from django.urls import path
+from .views import CoursesView
 urlpatterns = [
+    path('courses',CoursesView.as_view(),name='courses'),
 ]
