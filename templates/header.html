@@ -50,7 +50,7 @@
                             <li><a href="{% url 'home'%}">Home</a>
                             </li>
                             <li class="about-menu">
-                                <a href="about.html" class="mm-arr">About us</a>
+                                <a href="{% url 'about'%}" class="mm-arr">About us</a>
                                 <!-- MEGA MENU 1 -->
                                 <div class="mm-pos">
                                     <div class="about-mm m-menu">
@@ -65,13 +65,13 @@
                                             </div>
                                             <div class="mm1-com mm1-s2">
                                                 <p>Want to change the world? At Berkeley we’re doing just that. When you join the Golden Bear community, you’re part of an institution that shifts the global conversation every single day.</p>
-                                                <a href="about.html" class="mm-r-m-btn">Read more</a>
+                                                <a href="{% url 'about'%}" class="mm-r-m-btn">Read more</a>
                                             </div>
                                             <div class="mm1-com mm1-s3">
                                                 <ul>
                                                     <li><a href="all-courses.html">All Courses</a></li>
                                                     <li><a href="course-details.html">Course details</a></li>
-                                                    <li><a href="about.html">About</a></li>
+                                                    <li><a href="{% url 'about'%}">About</a></li>
                                                     <li><a href="admission.html">Admission</a></li>
                                                     <li><a href="awards.html">Awards</a></li>
                                                 </ul>
@@ -97,13 +97,13 @@
                                         <div class="m-menu-inn">
                                             <div class="mm2-com mm1-com mm1-s1">
                                                 <div class="ed-course-in">
-                                                    <a class="course-overlay" href="about.html">
+                                                    <a class="course-overlay" href="{% url 'about'%}">
                                                         <img src="{% static 'images/h-about1.jpg'%}" alt="">
                                                         <span>Academics</span>
                                                     </a>
                                                 </div>
                                                 <p>Donec lacus libero, rutrum ac sollicitudin sed, mattis non eros. Vestibulum congue nec eros quis lacinia. Mauris non tincidunt lectus. Nulla mollis, orci vitae accumsan rhoncus.</p>
-                                                <a href="about.html" class="mm-r-m-btn">Read more</a>
+                                                <a href="{% url 'about'%}" class="mm-r-m-btn">Read more</a>
                                             </div>
                                             <div class="mm2-com mm1-com mm1-s1">
                                                 <div class="ed-course-in">
@@ -155,7 +155,7 @@
                                                     <li><a href="index-1.html">Home - 1</a></li>
                                                     <li><a href="all-courses.html">All Courses</a></li>
                                                     <li><a href="course-details.html">Course Details</a></li>
-                                                    <li><a href="about.html">About us</a></li>
+                                                    <li><a href="{% url 'about'%}">About us</a></li>
                                                     <li><a href="admission.html">admission</a></li>
                                                     <li><a href="awards.html">awards</a></li>
                                                     <li><a href="blog.html">blog</a></li>
