@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Set permissions
-sudo chmod 710 /var/lib/jenkins/workspace/Education
+sudo chmod -R 710 /var/lib/jenkins/workspace/Education
 
 # Check for sites-available
 if [ ! -d "/etc/nginx/sites-available" ]
