@@ -1,10 +1,10 @@
 #!/bin/bash
 
 # Check for the socket file
-sudo cp -rf ./conf/education.socket /etc/systemd/system/education.socket
+sudo cp -rf ./configurations/education.socket /etc/systemd/system/education.socket
 
 # Check for the service file
-sudo cp -rf ./conf/education.service /etc/systemd/system/education.service
+sudo cp -rf ./configurations/education.service /etc/systemd/system/education.service
 
 # Start / Enable the service
 sudo systemctl enable --now education

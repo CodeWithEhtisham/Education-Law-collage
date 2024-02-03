@@ -5,9 +5,9 @@ pipeline {
         stage('Packages upgrade') {
             steps {
                 sh """
-                sudo chmod +x ./conf/gunicorn.sh
-                sudo chmod +x ./conf/nginx.sh
-                sudo chmod +x ./conf/virtual_env.sh
+                sudo chmod +x ./configurations/gunicorn.sh
+                sudo chmod +x ./configurations/nginx.sh
+                sudo chmod +x ./configurations/virtual_env.sh
                 """
                 sh 'sudo apt update && sudo apt install python3-pip nginx curl -y'
             }
@@ -15,7 +15,7 @@ pipeline {
 
         stage('Virtual environment') {
             steps {
-                sh './conf/virtual_env.sh'
+                sh './configurations/virtual_env.sh'
             }
         }
 
@@ -34,14 +34,14 @@ pipeline {
 
         stage('Gunicorn setup') {
             steps {
-                sh './conf/gunicorn.sh'
+                sh './configurations/gunicorn.sh'
                 sh 'sudo systemctl status education'
             }
         }
 
         stage('Nginx setup') {
             steps {
-                sh './conf/nginx.sh'
+                sh './configurations/nginx.sh'
             }
         }
 

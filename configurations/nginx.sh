@@ -9,9 +9,9 @@ then
     echo "Directory does not exist. Creating one."
     mkdir -p /etc/nginx/sites-available
     echo "Directory created"
-    sudo cp -rf ./conf/education /etc/nginx/sites-available/education
+    sudo cp -rf ./configurations/education /etc/nginx/sites-available/education
 else
-    sudo cp -rf ./conf/education /etc/nginx/sites-available/education
+    sudo cp -rf ./configurations/education /etc/nginx/sites-available/education
 fi
 
 # Make the link to activate nginx configuration
