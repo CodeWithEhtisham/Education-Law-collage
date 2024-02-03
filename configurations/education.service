@@ -10,7 +10,7 @@ WorkingDirectory=/var/lib/jenkins/workspace/Education-Law-collage
 ExecStart=/var/lib/jenkins/workspace/Education-Law-collage/env/bin/gunicorn \
           --access-logfile - \
           --workers 3 \
-          --bind unix:/run/gunicorn.sock \
+          --bind unix:/run/education_gunicorn.sock \
           Education-Law-collage.wsgi:application
 
 [Install]
