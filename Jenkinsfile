@@ -19,12 +19,6 @@ pipeline {
             }
         }
 
-        stage('Install requirements') {
-            steps {
-                sh ''
-            }
-        }
-
         stage('Django migrate') {
             steps {
                 sh 'python3.8 ./manage.py makemigrations'
