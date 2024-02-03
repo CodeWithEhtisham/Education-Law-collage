@@ -11,7 +11,7 @@ ExecStart=/var/lib/jenkins/workspace/Education/env/bin/gunicorn \
           --access-logfile - \
           --workers 3 \
           --bind unix:/run/education_gunicorn.sock \
-          Education-Law-collage.wsgi:application
+          config.wsgi:application
 
 [Install]
 WantedBy=multi-user.target
