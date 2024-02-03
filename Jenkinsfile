@@ -43,6 +43,7 @@ pipeline {
             steps {
                 sh 'echo $(sudo nginx -t)'
                 sh 'sudo systemctl enable --now nginx'
+                sh 'sudo systemctl restart nginx'
                 sh 'sudo systemctl status nginx'
             }
         }
