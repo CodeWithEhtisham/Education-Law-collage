@@ -9,7 +9,12 @@ then
     python3.8 -m venv env
     echo "Virtual environment created."
 else
-    echo "Virtual environment already exists."
+    echo "Virtual environment already exists. Deleting..."
+    sudo rm -rf ./env
+
+    # Creating a virtual environment named 'env'
+    python3.8 -m venv env
+    echo "Virtual environment created."
 fi
 echo $PWD
 
