@@ -21,3 +21,7 @@ echo $PWD
 # Activating the virtual environment
 source ./env/bin/activate
 echo "Virtual environment activated."
+
+# Installing requirements
+python3.8 -m pip install -r ./requirements.txt
+echo "Requirements installed"
