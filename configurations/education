@@ -5,11 +5,11 @@ server {
     location = /favicon.ico { access_log off; log_not_found off; }
 
     location /static/ {
-        root /var/lib/jenkins/workspace/Education-Law-collage;
+        root /var/lib/jenkins/workspace/Education;
     }
 
     location /media/ {
-        root /var/lib/jenkins/workspace/Education-Law-collage;
+        root /var/lib/jenkins/workspace/Education;
     }
 
     location / {
@@ -19,6 +19,6 @@ server {
 
     error_page 500 502 503 504 /500.html;
     location = /500.html {
-        root /var/lib/jenkins/workspace/Education-Law-collage/templates/;
+        root /var/lib/jenkins/workspace/Education/templates/;
     }
 }

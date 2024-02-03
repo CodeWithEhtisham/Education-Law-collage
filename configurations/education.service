@@ -6,8 +6,8 @@ After=network.target
 [Service]
 User=jenkins
 Group=www-data
-WorkingDirectory=/var/lib/jenkins/workspace/Education-Law-collage
-ExecStart=/var/lib/jenkins/workspace/Education-Law-collage/env/bin/gunicorn \
+WorkingDirectory=/var/lib/jenkins/workspace/Education
+ExecStart=/var/lib/jenkins/workspace/Education/env/bin/gunicorn \
           --access-logfile - \
           --workers 3 \
           --bind unix:/run/education_gunicorn.sock \
