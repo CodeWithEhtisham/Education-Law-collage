@@ -1,0 +1,17 @@
+[Unit]
+Description=gunicorn daemon
+Requires=education.socket
+After=network.target
+
+[Service]
+User=jenkins
+Group=www-data
+WorkingDirectory=/var/lib/jenkins/workspace/Education-Law-collage
+ExecStart=/var/lib/jenkins/workspace/Education-Law-collage/env/bin/gunicorn \
+          --access-logfile - \
+          --workers 3 \
+          --bind unix:/run/gunicorn.sock \
+          Education-Law-collage.wsgi:application
+
+[Install]
+WantedBy=multi-user.target
