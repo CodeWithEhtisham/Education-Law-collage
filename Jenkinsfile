@@ -23,7 +23,7 @@ pipeline {
             steps {
                 sh 'python3.8 ./manage.py makemigrations'
                 sh 'python3.8 ./manage.py migrate'
-                sh 'python3.8 ./manage.py collectstatic'
+                sh 'python3.8 ./manage.py collectstatic --noinput'
             }
         }
 
