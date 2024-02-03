@@ -21,6 +21,7 @@ pipeline {
 
         stage('Install requirements') {
             steps {
+                sh 'activate ./env/bin/activate'
                 sh 'python3.8 -m pip install -r ./requirements.txt'
             }
         }
