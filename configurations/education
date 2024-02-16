@@ -1,6 +1,6 @@
 server {
     listen 80;
-    server_name legendscolleges.edu.pk www.legendscolleges.edu.pk;
+    server_name "legendscolleges.edu.pk" "www.legendscolleges.edu.pk";
 
     location = /favicon.ico { access_log off; log_not_found off; }
 
