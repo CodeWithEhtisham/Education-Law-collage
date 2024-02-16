@@ -1,6 +1,6 @@
 server {
-    listen 5000;
-    server_name 212.1.214.82;
+    listen 80;
+    server_name legendscolleges.edu.pk www.legendscolleges.edu.pk;
 
     location = /favicon.ico { access_log off; log_not_found off; }
 
