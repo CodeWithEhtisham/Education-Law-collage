@@ -1,6 +1,6 @@
 server {
-    listen 80;
-    server_name "legendscolleges.edu.pk" "www.legendscolleges.edu.pk";
+    listen 5000;
+    server_name 212.1.214.82;
 
     location = /favicon.ico { access_log off; log_not_found off; }
 
@@ -17,8 +17,5 @@ server {
         proxy_pass http://unix:/run/education_gunicorn.sock;
     }
 
-    error_page 500 502 503 504 /500.html;
-    location = /500.html {
-        root /var/lib/jenkins/workspace/Education/templates/;
-    }
+    
 }
