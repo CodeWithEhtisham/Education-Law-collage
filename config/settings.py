@@ -46,7 +46,8 @@ INSTALLED_APPS = [
     'apps.events',
 
     # admin 
-    'admin.dashboard'
+    'admin.dashboard',
+    'admin.course',
 ]
 
 MIDDLEWARE = [

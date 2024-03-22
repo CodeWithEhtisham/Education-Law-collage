@@ -27,4 +27,5 @@ urlpatterns = [
 
     # admin
     path('admin/dashboard/', include('admin.dashboard.urls')),
+    path('admin/course/', include('admin.course.urls')),
 ]
