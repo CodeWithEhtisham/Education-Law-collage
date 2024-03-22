@@ -1,14 +1,14 @@
-{% extends 'base.html'%}
+{% extends 'app/base.html'%}
 {% load static %}
 {% block content%}
 
 <body>
 
     <!-- MOBILE MENU -->
-    {% include 'mobile_menu.html'%}
+    {% include 'app/mobile_menu.html'%}
 
     <!--HEADER SECTION-->
-    {% include 'header.html'%}
+    {% include 'app/header.html'%}
     <!--END HEADER SECTION-->
 
     <!--SECTION START-->
@@ -147,7 +147,7 @@
 
     
 
-    {% include 'footer.html'%}
+    {% include 'app/footer.html'%}
     <section>
         <div class="icon-float">
             <ul>
@@ -163,6 +163,6 @@
     </section>
 
     <!--Import jQuery before materialize.js-->
-    {% include 'script.html'%}
+    {% include 'app/script.html'%}
 </body>
 {% endblock %}
