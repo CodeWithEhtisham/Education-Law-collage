@@ -50,6 +50,7 @@ INSTALLED_APPS = [
     'admin.course',
     'admin.site_setting',
     'admin.event',
+    'admin.student',
 ]
 
 MIDDLEWARE = [

@@ -20,9 +20,9 @@
         <li><a href="javascript:void(0)" class="collapsible-header"><i class="fa fa-user" aria-hidden="true"></i> Users</a>
             <div class="collapsible-body left-sub-menu">
                 <ul>
-                    <li><a href="admin-user-all.html">All Users</a>
+                    <li><a href="{% url 'student-list'%}">All Users</a>
                     </li>
-                    <li><a href="admin-user-add.html">Add New user</a>
+                    <li><a href="{% url 'student-create'%}">Add New user</a>
                     </li>
                 </ul>
             </div>
@@ -94,9 +94,9 @@
         <li><a href="javascript:void(0)" class="collapsible-header"><i class="fa fa-users" aria-hidden="true"></i> Students</a>
             <div class="collapsible-body left-sub-menu">
                 <ul>
-                    <li><a href="admin-user-all.html">All Students</a>
+                    <li><a href="{% url 'student-list'%}">All Students</a>
                     </li>
-                    <li><a href="admin-user-add.html">Add New Students</a>
+                    <li><a href="{% url 'student-create'%}">Add New Students</a>
                     </li>
                 </ul>
             </div>
