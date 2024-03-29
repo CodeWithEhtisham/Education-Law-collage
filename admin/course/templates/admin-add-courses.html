@@ -2,62 +2,29 @@
 {% load static %}
 {% block content%}
 
-<body>
-    <!--== MAIN CONTRAINER ==-->
-    {% include 'admin/header.html'%}
-
-    <!--== BODY CONTNAINER ==-->
-    <div class="container-fluid sb2">
-        <div class="row">
-            <div class="sb2-1">
-                <!--== USER INFO ==-->
-                <div class="sb2-12">
-                    <ul>
-                        <li><img src="images/placeholder.jpg" alt="">
-                        </li>
-                        <li>
-                            <h5>Victoria Baker <span> Santa Ana, CA</span></h5>
-                        </li>
-                        <li></li>
-                    </ul>
-                </div>
-                <!--== LEFT MENU ==-->
-                {% include 'admin/aside.html'%}
-            </div>
-
-            <!--== BODY INNER CONTAINER ==-->
-            <div class="sb2-2">
-                <!--== breadcrumbs ==-->
-                <div class="sb2-2-2">
-                    <ul>
-                        <li><a href="index-2.html"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
-                        </li>
-                        <li class="active-bre"><a href="#"> Add new course</a>
-                        </li>
-                        <li class="page-back"><a href="index-2.html"><i class="fa fa-backward" aria-hidden="true"></i> Back</a>
-                        </li>
-                    </ul>
-                </div>
-
-                <!--== User Details ==-->
-                <div class="sb2-2-3">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="box-inn-sp admin-form">
-				<div class="sb2-2-add-blog sb2-2-1">
+<div class="sb2-2-3">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="box-inn-sp admin-form">
+                <div class="sb2-2-add-blog sb2-2-1">
                     <h2>Add New Course</h2>
                     <p>The .table class adds basic styling (light padding and only horizontal dividers) to a table:</p>
 
                     <ul class="nav nav-tabs tab-list">
-                        <li class="active"><a data-toggle="tab" href="#home" aria-expanded="true"><i class="fa fa-info" aria-hidden="true"></i> <span>Detail</span></a>
+                        <li class="active"><a data-toggle="tab" href="#home" aria-expanded="true"><i class="fa fa-info"
+                                    aria-hidden="true"></i> <span>Detail</span></a>
                         </li>
-                        <li class=""><a data-toggle="tab" href="#menu1" aria-expanded="false"><i class="fa fa-bed" aria-hidden="true"></i> <span>Course Syllabus</span></a>
+                        <li class=""><a data-toggle="tab" href="#menu1" aria-expanded="false"><i class="fa fa-bed"
+                                    aria-hidden="true"></i> <span>Course Syllabus</span></a>
                         </li>
-                        <li class=""><a data-toggle="tab" href="#menu2" aria-expanded="false"><i class="fa fa-picture-o" aria-hidden="true"></i> <span>Banner Image</span></a>
+                        <li class=""><a data-toggle="tab" href="#menu2" aria-expanded="false"><i class="fa fa-picture-o"
+                                    aria-hidden="true"></i> <span>Banner Image</span></a>
                         </li>
-                        <li class=""><a data-toggle="tab" href="#menu3" aria-expanded="false"><i class="fa fa-facebook" aria-hidden="true"></i> <span>Time table</span></a>
+                        <li class=""><a data-toggle="tab" href="#menu3" aria-expanded="false"><i class="fa fa-facebook"
+                                    aria-hidden="true"></i> <span>Time table</span></a>
                         </li>
-                        <li class=""><a data-toggle="tab" href="#menu4" aria-expanded="false"><i class="fa fa-phone" aria-hidden="true"></i> <span>Contact Info</span></a>
+                        <li class=""><a data-toggle="tab" href="#menu4" aria-expanded="false"><i class="fa fa-phone"
+                                    aria-hidden="true"></i> <span>Contact Info</span></a>
                         </li>
                     </ul>
 
@@ -86,19 +53,21 @@
                                                 <label>Course Descriptions:</label>
                                             </div>
                                         </div>
-                                            <div class="row">
-                                                <div class="input-field col s12">
-                                                    <select>
-									  <option value="" disabled selected>Select Status</option>
-									  <option value="1">Active</option>
-									  <option value="2">De-Active</option>
-									  <option value="3">Delete</option>
-									</select>
-                                                </div>
-                                            </div>
                                         <div class="row">
                                             <div class="input-field col s12">
-                                                <i class="waves-effect waves-light btn-large waves-input-wrapper" style=""><input type="submit" class="waves-button-input" value="Submit"></i>
+                                                <select>
+                                                    <option value="" disabled selected>Select Status</option>
+                                                    <option value="1">Active</option>
+                                                    <option value="2">De-Active</option>
+                                                    <option value="3">Delete</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="input-field col s12">
+                                                <i class="waves-effect waves-light btn-large waves-input-wrapper"
+                                                    ><input type="submit" class="waves-button-input"
+                                                        value="Submit"></i>
                                             </div>
                                         </div>
                                     </form>
@@ -112,67 +81,68 @@
                             </div>
                             <div class="bor ad-cou-deta-h4">
                                 <form>
-										<h4>Requirements:</h4>
-                                        <div class="row">
-                                            <div class="input-field col s12">
-                                                <textarea class="materialize-textarea"></textarea>
-                                                <label>Course Descriptions:</label>
-                                            </div>
-                                        </div> 
-										<h4>Feese:</h4>
-                                        <div class="row">
-                                            <div class="input-field col s12">
-                                                <input type="number" class="validate" required>
-                                                <label>1'st terms feese</label>
-                                            </div>
-                                            <div class="input-field col s12">
-                                                <input type="number" class="validate" required>
-                                                <label>2'nd terms feese</label>
-                                            </div>
-                                            <div class="input-field col s12">
-                                                <input type="number" class="validate" required>
-                                                <label>3'rd terms feese</label>
-                                            </div>
-                                            <div class="input-field col s12">
-                                                <textarea class="materialize-textarea"></textarea>
-                                                <label>Price Descriptions:</label>
-                                            </div>
+                                    <h4>Requirements:</h4>
+                                    <div class="row">
+                                        <div class="input-field col s12">
+                                            <textarea class="materialize-textarea"></textarea>
+                                            <label>Course Descriptions:</label>
                                         </div>
-										<h4>Student Profile:</h4>
-                                        <div class="row">
-                                            <div class="input-field col s12">
-                                                <textarea class="materialize-textarea"></textarea>
-                                                <label>Student Profile Descriptions:</label>
-                                            </div>
-                                        </div>	
-										<h4>How to apply this course:</h4>
-                                        <div class="row">
-                                            <div class="input-field col s12">
-												<input type="text" class="validate" required>
-                                                <label>Step 1 Descriptions:</label>
-                                            </div>
-                                            <div class="input-field col s12">
-												<input type="text" class="validate" required>
-                                                <label>Step 2 Descriptions:</label>
-                                            </div>
-                                            <div class="input-field col s12">
-												<input type="text" class="validate" required>
-                                                <label>Step 3 Descriptions:</label>
-                                            </div>
-                                            <div class="input-field col s12">
-												<input type="text" class="validate" required>
-                                                <label>Step 4 Descriptions:</label>
-                                            </div>
-                                            <div class="input-field col s12">
-												<input type="text" class="validate" required>
-                                                <label>Step 5 Descriptions:</label>
-                                            </div>
-                                        </div>	
-                                        <div class="row">
-                                            <div class="input-field col s12">
-                                                <i class="waves-effect waves-light btn-large waves-input-wrapper" style=""><input type="submit" class="waves-button-input" value="Submit"></i>
-                                            </div>
-                                        </div>										
+                                    </div>
+                                    <h4>Feese:</h4>
+                                    <div class="row">
+                                        <div class="input-field col s12">
+                                            <input type="number" class="validate" required>
+                                            <label>1'st terms feese</label>
+                                        </div>
+                                        <div class="input-field col s12">
+                                            <input type="number" class="validate" required>
+                                            <label>2'nd terms feese</label>
+                                        </div>
+                                        <div class="input-field col s12">
+                                            <input type="number" class="validate" required>
+                                            <label>3'rd terms feese</label>
+                                        </div>
+                                        <div class="input-field col s12">
+                                            <textarea class="materialize-textarea"></textarea>
+                                            <label>Price Descriptions:</label>
+                                        </div>
+                                    </div>
+                                    <h4>Student Profile:</h4>
+                                    <div class="row">
+                                        <div class="input-field col s12">
+                                            <textarea class="materialize-textarea"></textarea>
+                                            <label>Student Profile Descriptions:</label>
+                                        </div>
+                                    </div>
+                                    <h4>How to apply this course:</h4>
+                                    <div class="row">
+                                        <div class="input-field col s12">
+                                            <input type="text" class="validate" required>
+                                            <label>Step 1 Descriptions:</label>
+                                        </div>
+                                        <div class="input-field col s12">
+                                            <input type="text" class="validate" required>
+                                            <label>Step 2 Descriptions:</label>
+                                        </div>
+                                        <div class="input-field col s12">
+                                            <input type="text" class="validate" required>
+                                            <label>Step 3 Descriptions:</label>
+                                        </div>
+                                        <div class="input-field col s12">
+                                            <input type="text" class="validate" required>
+                                            <label>Step 4 Descriptions:</label>
+                                        </div>
+                                        <div class="input-field col s12">
+                                            <input type="text" class="validate" required>
+                                            <label>Step 5 Descriptions:</label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="input-field col s12">
+                                            <i class="waves-effect waves-light btn-large waves-input-wrapper" ><input type="submit" class="waves-button-input"
+                                                    value="Submit"></i>
+                                        </div>
+                                    </div>
                                 </form>
                             </div>
                         </div>
@@ -189,12 +159,15 @@
                                             <input type="file" multiple="">
                                         </div>
                                         <div class="file-path-wrapper">
-                                            <input class="file-path validate" type="text" placeholder="Upload course banner image">
+                                            <input class="file-path validate" type="text"
+                                                placeholder="Upload course banner image">
                                         </div>
                                     </div>
                                     <div class="row">
                                         <div class="input-field col s12">
-                                            <i class="waves-effect waves-light btn-large waves-input-wrapper" style=""><input type="submit" class="waves-button-input" value="Upload"></i>
+                                            <i class="waves-effect waves-light btn-large waves-input-wrapper"
+                                                ><input type="submit" class="waves-button-input"
+                                                    value="Upload"></i>
                                         </div>
                                     </div>
 
@@ -208,54 +181,56 @@
                             </div>
                             <div class="bor ad-cou-deta-h4">
                                 <form>
-									<h4>1st semester:</h4>
-									<div class="row">
-										<div class="input-field col s12">
-											<input type="text" class="validate" required>
-											<label>Title:</label>
-										</div>
-										<div class="input-field col s12">
-											<textarea class="materialize-textarea"></textarea>
-											<label>Descriptions:</label>
-										</div>
-									</div> 
-									<h4>2nd semester:</h4>
-									<div class="row">
-										<div class="input-field col s12">
-											<input type="text" class="validate" required>
-											<label>Title:</label>
-										</div>
-										<div class="input-field col s12">
-											<textarea class="materialize-textarea"></textarea>
-											<label>Descriptions:</label>
-										</div>
-									</div> 
-									<h4>3rd semester:</h4>
-									<div class="row">
-										<div class="input-field col s12">
-											<input type="text" class="validate" required>
-											<label>Title:</label>
-										</div>
-										<div class="input-field col s12">
-											<textarea class="materialize-textarea"></textarea>
-											<label>Descriptions:</label>
-										</div>
-									</div> 
-									<h4>4th semester:</h4>
-									<div class="row">
-										<div class="input-field col s12">
-											<input type="text" class="validate" required>
-											<label>Title:</label>
-										</div>
-										<div class="input-field col s12">
-											<textarea class="materialize-textarea"></textarea>
-											<label>Descriptions:</label>
-										</div>
-									</div> 
-									
+                                    <h4>1st semester:</h4>
                                     <div class="row">
                                         <div class="input-field col s12">
-                                            <i class="waves-effect waves-light btn-large waves-input-wrapper" style=""><input type="submit" class="waves-button-input" value="Submit"></i>
+                                            <input type="text" class="validate" required>
+                                            <label>Title:</label>
+                                        </div>
+                                        <div class="input-field col s12">
+                                            <textarea class="materialize-textarea"></textarea>
+                                            <label>Descriptions:</label>
+                                        </div>
+                                    </div>
+                                    <h4>2nd semester:</h4>
+                                    <div class="row">
+                                        <div class="input-field col s12">
+                                            <input type="text" class="validate" required>
+                                            <label>Title:</label>
+                                        </div>
+                                        <div class="input-field col s12">
+                                            <textarea class="materialize-textarea"></textarea>
+                                            <label>Descriptions:</label>
+                                        </div>
+                                    </div>
+                                    <h4>3rd semester:</h4>
+                                    <div class="row">
+                                        <div class="input-field col s12">
+                                            <input type="text" class="validate" required>
+                                            <label>Title:</label>
+                                        </div>
+                                        <div class="input-field col s12">
+                                            <textarea class="materialize-textarea"></textarea>
+                                            <label>Descriptions:</label>
+                                        </div>
+                                    </div>
+                                    <h4>4th semester:</h4>
+                                    <div class="row">
+                                        <div class="input-field col s12">
+                                            <input type="text" class="validate" required>
+                                            <label>Title:</label>
+                                        </div>
+                                        <div class="input-field col s12">
+                                            <textarea class="materialize-textarea"></textarea>
+                                            <label>Descriptions:</label>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="input-field col s12">
+                                            <i class="waves-effect waves-light btn-large waves-input-wrapper"
+                                                ><input type="submit" class="waves-button-input"
+                                                    value="Submit"></i>
                                         </div>
                                     </div>
                                 </form>
@@ -302,7 +277,9 @@
                                     </div>
                                     <div class="row">
                                         <div class="input-field col s12">
-                                            <i class="waves-effect waves-light btn-large waves-input-wrapper" style=""><input type="submit" class="waves-button-input" value="Upload"></i>
+                                            <i class="waves-effect waves-light btn-large waves-input-wrapper"
+                                                ><input type="submit" class="waves-button-input"
+                                                    value="Upload"></i>
                                         </div>
                                     </div>
                                 </form>
@@ -310,16 +287,8 @@
                         </div>
                     </div>
                 </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
-
         </div>
     </div>
-
-    <!--Import jQuery before materialize.js-->
-    {% include 'admin/script.html'%}
-</body>
+</div>
 {%endblock%}

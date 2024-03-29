@@ -1,9 +1,9 @@
 {% load static %}
 <div class="sb2-13">
     <ul class="collapsible" data-collapsible="accordion">
-        <li><a href="admin.html" class="menu-active"><i class="fa fa-bar-chart" aria-hidden="true"></i> Dashboard</a>
+        <li><a href="{% url 'dashboard'%}" class="menu-active"><i class="fa fa-bar-chart" aria-hidden="true"></i> Dashboard</a>
         </li>
-        <li><a href="admin-setting.html"><i class="fa fa-cogs" aria-hidden="true"></i> Site Setting</a>
+        <li><a href="{% url 'site-setting'%}"><i class="fa fa-cogs" aria-hidden="true"></i> Site Setting</a>
         </li>
         <li><a href="javascript:void(0)" class="collapsible-header"><i class="fa fa-book" aria-hidden="true"></i> All Courses</a>
             <div class="collapsible-body left-sub-menu">
@@ -20,9 +20,9 @@
         <li><a href="javascript:void(0)" class="collapsible-header"><i class="fa fa-user" aria-hidden="true"></i> Users</a>
             <div class="collapsible-body left-sub-menu">
                 <ul>
-                    <li><a href="admin-user-all.html">All Users</a>
+                    <li><a href="{% url 'student-list'%}">All Users</a>
                     </li>
-                    <li><a href="admin-user-add.html">Add New user</a>
+                    <li><a href="{% url 'student-create'%}">Add New user</a>
                     </li>
                 </ul>
             </div>
@@ -54,9 +54,9 @@
         <li><a href="javascript:void(0)" class="collapsible-header"><i class="fa fa-calendar" aria-hidden="true"></i> Events</a>
             <div class="collapsible-body left-sub-menu">
                 <ul>
-                    <li><a href="admin-event-all.html">All Events</a>
+                    <li><a href="{% url 'event-list'%}">All Events</a>
                     </li>
-                    <li><a href="admin-event-add.html">Create New Events</a>
+                    <li><a href="{% url 'event-create'%}">Create New Events</a>
                     </li>
                 </ul>
             </div>
@@ -94,9 +94,9 @@
         <li><a href="javascript:void(0)" class="collapsible-header"><i class="fa fa-users" aria-hidden="true"></i> Students</a>
             <div class="collapsible-body left-sub-menu">
                 <ul>
-                    <li><a href="admin-user-all.html">All Students</a>
+                    <li><a href="{% url 'student-list'%}">All Students</a>
                     </li>
-                    <li><a href="admin-user-add.html">Add New Students</a>
+                    <li><a href="{% url 'student-create'%}">Add New Students</a>
                     </li>
                 </ul>
             </div>

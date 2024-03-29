@@ -28,4 +28,7 @@ urlpatterns = [
     # admin
     path('admin/dashboard/', include('admin.dashboard.urls')),
     path('admin/course/', include('admin.course.urls')),
+    path('admin/site/setting/', include('admin.site_setting.urls')),
+    path('admin/events/', include('admin.event.urls')),
+    path('admin/students/', include('admin.student.urls')),
 ]
