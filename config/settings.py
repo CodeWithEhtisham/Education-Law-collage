@@ -49,11 +49,11 @@ INSTALLED_APPS = [
     'courses.course_admin',
     'courses.course_website',
 
-    'apps.about',
-    'apps.contact',
-    # 'apps.courses',
-    'apps.admission',
-    'apps.home',
+    # 'apps website',
+    'website.about',
+    'website.contact',
+    'website.admission',
+    'website.home',
 
     # admin 
     'admin.dashboard',
