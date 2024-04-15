@@ -37,20 +37,28 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'apps.about',
-    'apps.contact',
-    'apps.courses',
-    'apps.admission',
-    'apps.home',
-    'apps.students',
-    'apps.events',
+    # student apps
+    'students.student_admin',
+    'students.student_dashboard',
+
+    # events apps
+    'events.event_admin',
+    'events.event_website',
+
+    # courses apps
+    'courses.course_admin',
+    'courses.course_website',
+
+    # 'apps website',
+    'website.about',
+    'website.contact',
+    'website.admission',
+    'website.home',
 
     # admin 
     'admin.dashboard',
-    'admin.course',
+    # 'admin.course',
     'admin.site_setting',
-    'admin.event',
-    'admin.student',
 ]
 
 MIDDLEWARE = [

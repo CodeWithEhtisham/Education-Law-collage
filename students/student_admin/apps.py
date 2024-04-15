@@ -1,6 +1,6 @@
 from django.apps import AppConfig
 
 
-class ContactConfig(AppConfig):
+class StudentConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
-    name = 'apps.contact'
+    name = 'students.student_admin'

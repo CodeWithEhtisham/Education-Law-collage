@@ -17,18 +17,17 @@ from django.contrib import admin
 from django.urls import path , include
 
 urlpatterns = [
-    path('', include('apps.home.urls')),
-    path('', include('apps.about.urls')),
-    path('', include('apps.contact.urls')),
-    path('', include('apps.courses.urls')),
-    path('', include('apps.admission.urls')),
-    path('',include('apps.events.urls')),
-    path('',include('apps.students.urls')),
+    path('student/',include('students.urls')),
+    path('events/',include('events.urls')),
+    path('courses/', include('courses.urls')),
+    path('', include('website.urls')),
+
+    # website
 
     # admin
     path('admin/dashboard/', include('admin.dashboard.urls')),
-    path('admin/course/', include('admin.course.urls')),
     path('admin/site/setting/', include('admin.site_setting.urls')),
-    path('admin/events/', include('admin.event.urls')),
-    path('admin/students/', include('admin.student.urls')),
+    # path('admin/course/', include('admin.course.urls')),
+    # path('admin/events/', include('admin.event.urls')),
+    # path('admin/students/', include('admin.student.urls')),
 ]
