@@ -45,15 +45,19 @@ INSTALLED_APPS = [
     'events.event_admin',
     'events.event_website',
 
+    # courses apps
+    'courses.course_admin',
+    'courses.course_website',
+
     'apps.about',
     'apps.contact',
-    'apps.courses',
+    # 'apps.courses',
     'apps.admission',
     'apps.home',
 
     # admin 
     'admin.dashboard',
-    'admin.course',
+    # 'admin.course',
     'admin.site_setting',
 ]
 
