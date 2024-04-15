@@ -18,18 +18,20 @@ from django.urls import path , include
 
 urlpatterns = [
     path('student/',include('students.urls')),
+    path('events/',include('events.urls')),
     
+
     path('', include('apps.home.urls')),
     path('', include('apps.about.urls')),
     path('', include('apps.contact.urls')),
     path('', include('apps.courses.urls')),
     path('', include('apps.admission.urls')),
-    path('',include('apps.events.urls')),
+    # path('',include('apps.events.urls')),
 
     # admin
     path('admin/dashboard/', include('admin.dashboard.urls')),
     path('admin/course/', include('admin.course.urls')),
     path('admin/site/setting/', include('admin.site_setting.urls')),
-    path('admin/events/', include('admin.event.urls')),
+    # path('admin/events/', include('admin.event.urls')),
     # path('admin/students/', include('admin.student.urls')),
 ]

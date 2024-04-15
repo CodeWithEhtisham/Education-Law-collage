@@ -41,18 +41,20 @@ INSTALLED_APPS = [
     'students.student_admin',
     'students.student_dashboard',
 
+    # events apps
+    'events.event_admin',
+    'events.event_website',
+
     'apps.about',
     'apps.contact',
     'apps.courses',
     'apps.admission',
     'apps.home',
-    'apps.events',
 
     # admin 
     'admin.dashboard',
     'admin.course',
     'admin.site_setting',
-    'admin.event',
 ]
 
 MIDDLEWARE = [
